@@ -6,10 +6,10 @@ Promise对象用于异步计算。一个Promise对象代表着一个还未完成
 - fulfilled: 成功的操作
 - rejected: 失败的操作
 
-当一个promise被调用时，初始是一个pending状态，此时将继续执行下面的代码，当promise状态为fulfilled时，promise.then绑定的方法将会被调用。当状态为rejected时，promise.catch方法会被调用。
+当一个promise被调用时，初始是一个pending状态，此时将继续执行下面的代码，当promise状态为fulfilled时，promise.then绑定的方法将会被调用。当状态为rejected时，promise.catch方法会被调用。
 
 1、Promise.prototype.then和Promise.prototype.catch方法返回Promises对象, 所以它们可以被链式调用。
-2、promise.then()返回值是个promise对象时，将以这个promise的最终状态返回一个promise对象，如果返回值是一个值时，将以这个值为成功状态返回promise对象。
+2、promise.then()返回值是个promise对象时，将以这个promise的最终状态返回一个promise对象，如果返回值是一个值时，将以这个值为成功状态返回promise对象。
 
 #### promise.resolve(value)
 此方法返回一个以给定值解析后的 **promise对象**， 如果这个值是promise对象，返回的Promise对象会采用它的最终结果，否则以该值为成功状态返回promise对象。
