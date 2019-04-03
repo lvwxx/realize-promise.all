@@ -21,7 +21,7 @@ Promise对象用于异步计算。一个Promise对象代表着一个还未完成
 ### 自己实现一个promise.all
 Promise.all(values)方法返回一个Promise对象，该Promise会等values参数内的所有值都被resolve后才被resolve（values将会被并发执行），或以values参数内的第一个被reject的原因而被reject。
 
-```
+```js
 function allPromise(values) {
     // 校验values是否是个数组
     if(!Array.isArray(values)) {
